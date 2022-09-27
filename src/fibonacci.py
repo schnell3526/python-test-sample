@@ -1,6 +1,6 @@
 def Fibonacci() -> int:
     ls = {0: 0, 1: 1}
-    def f(n):
+    def f(n: int):
         nonlocal ls
         if len(ls) <= n:
             ls[n] = f(n-2) + f(n-1)
